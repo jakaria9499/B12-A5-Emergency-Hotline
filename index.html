@@ -22,7 +22,7 @@
         </div>
         <div class="nav_side_btn flex items-center gap-4 ">
             <div class="heart_btn btn secondary_color rounded-full">
-                <span>0</span>
+                <span id="heart_display">0</span>
                 <img class="h-[60%]" src="./assets/heart.png" alt="heart icon">
             </div>
             <div class="coin_btn btn secondary_color rounded-full">
@@ -52,7 +52,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/emergency.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart "></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">National Emergency Number</h1>
@@ -72,7 +72,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/police.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">Police Helpline Number</h1>
@@ -92,7 +92,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/fire-service.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">Fire Service Number</h1>
@@ -112,7 +112,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/ambulance.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">Ambulance Service</h1>
@@ -132,7 +132,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/emergency.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">Women & Child Helpline</h1>
@@ -152,7 +152,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/emergency.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">Anti-Corruption Helpline</h1>
@@ -172,7 +172,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/emergency.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">Electricity Helpline</h1>
@@ -192,7 +192,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/emergency.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">Brac Helpline</h1>
@@ -212,7 +212,7 @@
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
                         <img class="h-[30px]" src="./assets/emergency.png" alt="emargency icon">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartIncrement()" class="fa-regular fa-heart"></i>
                 </div>
                 <div>
                     <h1 class="font-bold text-xl">Bangladesh Railway Helpline </h1>
@@ -246,6 +246,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
 
