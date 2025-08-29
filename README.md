@@ -1,4 +1,3 @@
-
 ### 1.The difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll
 ---
 
@@ -21,5 +20,16 @@
 
 ---
 
+### 3.Event Bubbling
+- **Event Bubbling** when a user click a HTML element , then an event bubble up to parent element or capturing down to child element , This process is called event bubbling.
 
+
+---
+
+### 5.  the difference between preventDefault() and stopPropagation() methods
+
+- **preventDefault()** Prevents it from submitting a form 
+- **stopPropagation()** prevents it propagation of parent or child element event that means stop event bubbleing parent or child element
+
+---
 
