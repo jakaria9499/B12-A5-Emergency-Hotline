@@ -9,7 +9,7 @@
 ---
 
 ### 2.create and insert a new element into the DOM
----
+
 - **First you need to create an element then you need to change the text inside the element and then add it as a child of any HTML element : for example**
 
 ```bash
