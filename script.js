@@ -31,7 +31,7 @@ function callHistory() {
     for(let i=0;i<historyList.length; i++) {
         let list = document.createElement("div");
         list.innerHTML  = `
-                <div class="history_item flex justify-between  items-center mb-4 bg-gray-100 rounded-md p-3 max-2xl:text-sm max-sm:text-xs">
+                <div class="history_item flex justify-between  items-center mb-4 bg-gray-100 rounded-md p-3 max-2xl:text-sm">
                     <div class="">
                         <h3 class="font-bold">`+historyList[i].name+`</h3>
                         <p class="text-gray-500">`+historyList[i].number+`</p>
