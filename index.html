@@ -15,22 +15,22 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="bg-[#ecfdf7]">
-    <nav class="nav_bar flex justify-between items-center px-14 max-w-[1920px] h-[100px] mx-auto bg-white">
-        <div class="nav_logo w-[196px] h-[50px] flex items-center gap-3">
+    <nav class="nav_bar flex justify-between items-center px-14 max-md:px-4 max-w-[1920px] h-[100px] mx-auto bg-white">
+        <div class="nav_logo h-[50px] flex items-center gap-3">
             <img class="h-[90%]" src="./assets/logo.png" alt="Logo Image">
             <h1 class="font-extrabold text-lg text-[#006747] ">Emergency <br/>Service</h1>
         </div>
-        <div class="nav_side_btn flex items-center gap-4 ">
-            <div class="heart_btn btn secondary_color rounded-full">
+        <div class="nav_side_btn flex items-center gap-4 max-sm:gap-2">
+            <div class="heart_btn btn secondary_color rounded-full max-sm:w-15">
                 <span id="heart_display">0</span>
-                <img class="h-[60%]" src="./assets/heart.png" alt="heart icon">
+                <img class="h-[60%] max-sm:h-[50%]" src="./assets/heart.png" alt="heart icon">
             </div>
-            <div class="coin_btn btn secondary_color rounded-full">
+            <div class="coin_btn btn secondary_color rounded-full max-sm:w-15">
                 <span id="coin">0</span>
-                <img class="h-[60%]" src="./assets/coin.png" alt="coin display">
+                <img class="h-[60%] max-sm:h-[50%]" src="./assets/coin.png" alt="coin display">
             </div>
             <div class="copy_btn btn primary_color rounded-full">
-                <p class="text-white"><span>0</span> Copy</p>
+                <p class="text-white"><span id="copy_display" >0</span> Copy</p>
             </div>
         </div>
     </nav>
@@ -40,13 +40,13 @@
     <section class="hero_section flex flex-col justify-center items-center  max-w-[1920px] h-[239px] mx-auto  bg-gradient-to-r from-[#013223] from-0% via-[#006747] via-50% to-[#013223] to[100%] text-white ">
         <img class="h-15 mb-3" src="./assets/logo-dark.png" alt="Logo image">
         <h1 class="mb-3 font-bold text-2xl">Emergency Service Directory</h1>
-        <p>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        <p class="px-5">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </section>
 
     <!-- main section  -->
 
-    <section class="main_section max-w-[1920px] mx-auto p-10  grid grid-cols-4 gap-6  ">
-        <div class="cart_div grid grid-cols-3 gap-6  col-span-3">
+    <section class="main_section max-w-[1920px] mx-auto p-10  grid grid-cols-4 gap-6 max-xl:grid-cols-3 max-xl:gap-4 max-md:grid-cols-2 max-sm:grid-cols-1 ">
+        <div class="cart_div grid grid-cols-3 max-xl:grid-cols-2 max-sm:grid-cols-1 gap-6  col-span-3 max-xl:col-span-2 max-xl:gap-3 ">
             <div class="card h-[360px]  p-6 bg-white rounded-xl">
                 <div class="icon flex justify-between items-center py-4">
                     <div class="bg-[#FFE3E2] rounded-xl p-3">
@@ -228,21 +228,12 @@
                 </div>
             </div>
         </div>
-        <div class="call_history_navbar bg-white rounded-xl p-4 col-span-1 ">
+        <div class="call_history_navbar bg-white rounded-xl p-4 col-span-1 max-md:fixed right-5 bottom-5 max-md:w-90 max-sm:max-w-70">
             <div class="history_nav flex justify-between items-center bg-white ">
                 <h2><i class="fa-solid fa-clock-rotate-left"></i> Call History</h2>
-                <button class="btn primary_color rounded-full text-white">Clear</button>
+                <button id="clear_btn" class="btn primary_color rounded-full text-white">Clear</button>
             </div>
-            <div class="history_list mt-6">
-                <div class="history_item flex justify-between items-center mb-4 bg-gray-100 rounded-md p-3">
-                    <div class="">
-                        <h3 class="font-bold">National Emergency Number</h3>
-                        <p class="text-gray-500">999</p>
-                    </div>
-                    <div class="time">
-                        <p class="text-gray-500">10:30 AM</p>
-                    </div>
-                </div>
+            <div id="history_list" class=" mt-6 overflow-hidden">
             </div>
         </div>
     </section>
